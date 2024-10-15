@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #E7E7E7;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaço entre os campos do formulário */
+    margin-bottom: 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+input[type="text"], input[type="number"] {
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #009432; /* Cor ao focar */
+}
+
+button {
+    background-color: #009432;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #007a29; /* Cor ao passar o mouse */
+}
+
+button#calcular-media {
+    margin-top: 10px; /* Espaço entre o botão de enviar e o de calcular média */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Melhorar o espaçamento das bordas */
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: 700;
+}
+
+/* Estilizando células com emojis */
+table td {
+    font-size: 20px; /* Ajusta o tamanho dos emojis */
+}
+
+.resultado {
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.aprovado {
+    background-color: #009432;
+    color: #fff;
+}
+
+.reprovado {
+    background-color: red;
+    color: #fff;
+}
+
+/* Centraliza e ajusta tamanho das imagens (aprovado/reprovado) */
+.status-img {
+    height: 30px;
+    width: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"], input[type="number"], button {
+        font-size: 16px;
+    }
+}
